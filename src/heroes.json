@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Black Panther",
+    "health": 11,
+    "thwart": 2,
+    "attack": 2,
+    "defence": 2,
+    "hand": 5,
+    "ego": "T'Challa",
+    "recovery": 4,
+    "egoHand": 6
+  },
+  {
+    "name": "Captain America",
+    "health": 11,
+    "thwart": 2,
+    "attack": 2,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Steve Rogers",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Captain Marvel",
+    "health": 12,
+    "thwart": 2,
+    "attack": 2,
+    "defence": 1,
+    "hand": 5,
+    "ego": "Carol Danvers",
+    "recovery": 4,
+    "egoHand": 6
+  },
+  {
+    "name": "Iron Man",
+    "health": 9,
+    "thwart": 2,
+    "attack": 1,
+    "defence": 1,
+    "hand": 1,
+    "ego": "Tony Stark",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Ms. Marvel",
+    "health": 10,
+    "thwart": 1,
+    "attack": 1,
+    "defence": 1,
+    "hand": 5,
+    "ego": "Kamala Khan",
+    "recovery": 5,
+    "egoHand": 6
+  },
+  {
+    "name": "She-Hulk",
+    "health": 15,
+    "thwart": 1,
+    "attack": 3,
+    "defence": 2,
+    "hand": 4,
+    "ego": "Jennifer Walters",
+    "recovery": 5,
+    "egoHand": 6
+  },
+  {
+    "name": "Spider-Man",
+    "health": 10,
+    "thwart": 1,
+    "attack": 2,
+    "defence": 3,
+    "hand": 5,
+    "ego": "Peter Parker",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Thor",
+    "health": 14,
+    "thwart": 1,
+    "attack": 2,
+    "defence": 2,
+    "hand": 4,
+    "ego": "Odinson",
+    "recovery": 4,
+    "egoHand": 5
+  },
+  {
+    "name": "Black Widow",
+    "health": 9,
+    "thwart": 2,
+    "attack": 2,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Natasha Romanoff",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Doctor Strange",
+    "health": 10,
+    "thwart": 2,
+    "attack": 1,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Stephen Strange",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Hulk",
+    "health": 18,
+    "thwart": 0,
+    "attack": 3,
+    "defence": 3,
+    "hand": 4,
+    "ego": "Bruce Banner",
+    "recovery": 4,
+    "egoHand": 5
+  },
+  {
+    "name": "Ant-Man",
+    "health": 12,
+    "thwart": 2,
+    "attack": 1,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Scott Lang",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Wasp",
+    "health": 11,
+    "thwart": 1,
+    "attack": 1,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Nadia Van Dyne",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Quicksilver",
+    "health": 9,
+    "thwart": 1,
+    "attack": 1,
+    "defence": 1,
+    "hand": 5,
+    "ego": "Pietro Maximoff",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Scarlet Witch",
+    "health": 10,
+    "thwart": 2,
+    "attack": 1,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Wanda Maximoff",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Star-Lord",
+    "health": 10,
+    "thwart": 2,
+    "attack": 2,
+    "defence": 1,
+    "hand": 5,
+    "ego": "Peter Quill",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Gamora",
+    "health": 10,
+    "thwart": 2,
+    "attack": 2,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Gamora",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Drax",
+    "health": 14,
+    "thwart": 1,
+    "attack": 1,
+    "defence": 2,
+    "hand": 4,
+    "ego": "Drax",
+    "recovery": 4,
+    "egoHand": 6
+  },
+  {
+    "name": "Venom",
+    "health": 12,
+    "thwart": 1,
+    "attack": 2,
+    "defence": 2,
+    "hand": 5,
+    "ego": "Flash Thompson",
+    "recovery": 4,
+    "egoHand": 6
+  }
+]
