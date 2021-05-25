@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Klaw (I)",
+    "health": 12,
+    "scheme": 2,
+    "attack": 0
+  },
+  {
+    "name": "Klaw (II)",
+    "health": 18,
+    "scheme": 2,
+    "attack": 1
+  },
+  {
+    "name": "Klaw (III)",
+    "health": 22,
+    "scheme": 3,
+    "attack": 2
+  },
+  {
+    "name": "Rhino (I)",
+    "health": 14,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Rhino (II)",
+    "health": 15,
+    "scheme": 1,
+    "attack": 3
+  },
+  {
+    "name": "Rhino (III)",
+    "health": 16,
+    "scheme": 1,
+    "attack": 4
+  },
+  {
+    "name": "Ultron (I)",
+    "health": 17,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Ultron (II)",
+    "health": 22,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Ultron (III)",
+    "health": 27,
+    "scheme": 2,
+    "attack": 4
+  },
+  {
+    "name": "Norman Osborn (I)",
+    "health": 14,
+    "scheme": 2,
+    "attack": 0
+  },
+  {
+    "name": "Norman Osborn (II)",
+    "health": 18,
+    "scheme": 2,
+    "attack": 0
+  },
+  {
+    "name": "Norman Osborn (III)",
+    "health": 22,
+    "scheme": 3,
+    "attack": 0
+  },
+  {
+    "name": "Green Goblin (I)",
+    "health": 14,
+    "scheme": 0,
+    "attack": 3
+  },
+  {
+    "name": "Green Goblin (II)",
+    "health": 18,
+    "scheme": 0,
+    "attack": 4
+  },
+  {
+    "name": "Green Goblin (III)",
+    "health": 22,
+    "scheme": 0,
+    "attack": 4
+  },
+  {
+    "name": "Wrecker (A)",
+    "health": 14,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Wrecker (B)",
+    "health": 18,
+    "scheme": 3,
+    "attack": 3
+  },
+  {
+    "name": "Thunderball (A)",
+    "health": 13,
+    "scheme": 3,
+    "attack": 1
+  },
+  {
+    "name": "Thunderball (B)",
+    "health": 16,
+    "scheme": 3,
+    "attack": 2
+  },
+  {
+    "name": "Piledriver (A)",
+    "health": 11,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Piledriver (B)",
+    "health": 14,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Bulldozer (A)",
+    "health": 12,
+    "scheme": 1,
+    "attack": 3
+  },
+  {
+    "name": "Bulldozer (B)",
+    "health": 15,
+    "scheme": 2,
+    "attack": 3
+  }
+]
