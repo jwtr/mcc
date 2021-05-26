@@ -136,5 +136,263 @@
     "health": 15,
     "scheme": 2,
     "attack": 3
+  },
+  {
+    "name": "Crossbones (I)",
+    "health": 12,
+    "scheme": 1,
+    "attack": 1
+  },
+  {
+    "name": "Crossbones (II)",
+    "health": 14,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Crossbones (III)",
+    "health": 16,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Absorbing Man (I)",
+    "health": 14,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Absorbing Man (II)",
+    "health": 15,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Absorbing Man (III)",
+    "health": 16,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Taskmaster (I)",
+    "health": 13,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Taskmaster (II)",
+    "health": 16,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Taskmaster (III)",
+    "health": 17,
+    "scheme": 3,
+    "attack": 3
+  },
+  {
+    "name": "Zola (I)",
+    "health": 12,
+    "scheme": 2,
+    "attack": 1
+  },
+  {
+    "name": "Zola (II)",
+    "health": 14,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Zola (III)",
+    "health": 16,
+    "scheme": 3,
+    "attack": 2
+  },
+  {
+    "name": "Red Skull (I)",
+    "health": 12,
+    "scheme": 2,
+    "attack": 0
+  },
+  {
+    "name": "Red Skull (II)",
+    "health": 16,
+    "scheme": 3,
+    "attack": 1
+  },
+  {
+    "name": "Red Skull (III)",
+    "health": 20,
+    "scheme": 3,
+    "attack": 2
+  },
+  {
+    "name": "Kang (The Conqueror) (I)",
+    "health": 12,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Kang (Immortus) (II)",
+    "health": 18,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Kang (Iron Lad) (II)",
+    "health": 18,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Kang (Rama-Tut) (II)",
+    "health": 18,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Kang (Scarlet Centurion) (II)",
+    "health": 18,
+    "scheme": 0,
+    "attack": 3
+  },
+  {
+    "name": "Kang (The Conqueror) (III)",
+    "health": 20,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Kang (The Conqueror) (I) (EXPERT)",
+    "health": 15,
+    "scheme": 1,
+    "attack": 3
+  },
+  {
+    "name": "Kang (Immortus) (II) (EXPERT)",
+    "health": 22,
+    "scheme": 3,
+    "attack": 2
+  },
+  {
+    "name": "Kang (Iron Lad) (II) (EXPERT)",
+    "health": 22,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Kang (Rama-Tut) (II) (EXPERT)",
+    "health": 22,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Kang (Scarlet Centurion) (II) (EXPERT)",
+    "health": 22,
+    "scheme": 1,
+    "attack": 4
+  },
+  {
+    "name": "Kang (The Conqueror) (III) (EXPERT)",
+    "health": 25,
+    "scheme": 3,
+    "attack": 3
+  },
+  {
+    "name": "Drang (I)",
+    "health": 13,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Drang (II)",
+    "health": 14,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Drang (III)",
+    "health": 18,
+    "scheme": 3,
+    "attack": 3
+  },
+  {
+    "name": "Collector (I)",
+    "health": 13,
+    "scheme": 2,
+    "attack": 1
+  },
+  {
+    "name": "Collector (II)",
+    "health": 14,
+    "scheme": 3,
+    "attack": 2
+  },
+  {
+    "name": "Collector (II)",
+    "health": 18,
+    "scheme": 4,
+    "attack": 3
+  },
+  {
+    "name": "Collector (A1)",
+    "health": 8,
+    "scheme": 1,
+    "attack": 1
+  },
+  {
+    "name": "Collector (A2)",
+    "health": 0,
+    "scheme": 0,
+    "attack": 0
+  },
+  {
+    "name": "Collector (B1)",
+    "health": 10,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Collector (B2)",
+    "health": 0,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Nebula (I)",
+    "health": 14,
+    "scheme": 1,
+    "attack": 2
+  },
+  {
+    "name": "Nebula (II)",
+    "health": 17,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Nebula (III)",
+    "health": 20,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Ronan the Accuser (I)",
+    "health": 14,
+    "scheme": 2,
+    "attack": 2
+  },
+  {
+    "name": "Ronan the Accuser (II)",
+    "health": 18,
+    "scheme": 2,
+    "attack": 3
+  },
+  {
+    "name": "Ronan the Accuser (III)",
+    "health": 25,
+    "scheme": 3,
+    "attack": 4
   }
 ]

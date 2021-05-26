@@ -207,5 +207,49 @@
     "ego": "Flash Thompson",
     "recovery": 4,
     "egoHand": 6
+  },
+  {
+    "name": "Hawkeye",
+    "health": 9,
+    "thwart": 1,
+    "attack": 2,
+    "defence": 1,
+    "hand": 5,
+    "ego": "Clint Barton",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Spider-Woman",
+    "health": 11,
+    "thwart": 1,
+    "attack": 1,
+    "defence": 1,
+    "hand": 5,
+    "ego": "Jessica Drew",
+    "recovery": 3,
+    "egoHand": 6
+  },
+  {
+    "name": "Groot",
+    "health": 10,
+    "thwart": 1,
+    "attack": 2,
+    "defence": 3,
+    "hand": 5,
+    "ego": "Groot",
+    "recovery": 4,
+    "egoHand": 6
+  },
+  {
+    "name": "Rocket Raccoon",
+    "health": 9,
+    "thwart": 2,
+    "attack": 1,
+    "defence": 1,
+    "hand": 5,
+    "ego": "Rocket Raccoon",
+    "recovery": 3,
+    "egoHand": 6
   }
 ]
