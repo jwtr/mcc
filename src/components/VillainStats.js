@@ -30,6 +30,15 @@ function VillainStats() {
     );
   }
 
+  function multiplyVillainStartingHealth(multiplier) {
+    let newStats = cloneDeep(villainStats);
+    let villainBaseHealth = villains.find(
+      (villain) => villain.name === selectedVillain
+    )['health'];
+    newStats['health'] = villainBaseHealth * multiplier;
+    setVillainStats(newStats);
+  }
+
   function IncreaseVillainStatButton(props) {
     return (
       <button
@@ -58,7 +67,7 @@ function VillainStats() {
         <select
           value={selectedVillain}
           onChange={changeVillain}
-          className="p-2 rounded bg-white text-black text-2xl"
+          className="p-2 rounded bg-white text-black text-2xl w-full"
         >
           <option value="">Select your villain...</option>
           {villains.map((villain) => {
@@ -77,6 +86,33 @@ function VillainStats() {
             <DecreaseVillainStatButton stat={'health'} />
             HP: {villainStats.health}
             <IncreaseVillainStatButton stat={'health'} />
+          </div>
+          <div className="flex justify-between p-2 my-3">
+            Set starting health (optional)
+            <button
+              className="bg-gray-900 border-solid border-2 border-white text-white text-l font-bold ml-4 px-4 py-2 rounded focus:outline-none hover:bg-gray-800"
+              onClick={() => multiplyVillainStartingHealth(1)}
+            >
+              1x
+            </button>
+            <button
+              className="bg-gray-900 border-solid border-2 border-white text-white text-l font-bold ml-4 px-4 py-2 rounded focus:outline-none hover:bg-gray-800"
+              onClick={() => multiplyVillainStartingHealth(2)}
+            >
+              2x
+            </button>
+            <button
+              className="bg-gray-900 border-solid border-2 border-white text-white text-l font-bold ml-4 px-4 py-2 rounded focus:outline-none hover:bg-gray-800"
+              onClick={() => multiplyVillainStartingHealth(3)}
+            >
+              3x
+            </button>
+            <button
+              className="bg-gray-900 border-solid border-2 border-white text-white text-l font-bold ml-4 px-4 py-2 rounded focus:outline-none hover:bg-gray-800"
+              onClick={() => multiplyVillainStartingHealth(4)}
+            >
+              4x
+            </button>
           </div>
           <div className="flex justify-between bg-blue-600 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseVillainStatButton stat={'scheme'} />

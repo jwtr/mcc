@@ -56,7 +56,7 @@ function HeroStats() {
         <select
           value={selectedHero}
           onChange={changeHero}
-          className="p-2 rounded bg-white text-black text-2xl"
+          className="p-2 rounded bg-white text-black text-2xl w-full"
         >
           <option value="">Select your hero...</option>
           {heroes.map((hero) => {
