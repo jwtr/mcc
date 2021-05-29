@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import cloneDeep from 'lodash/cloneDeep';
+
+import ResetButton from './ResetButton';
 import villains from '../villains.json';
 
 function VillainStats() {
@@ -131,12 +133,7 @@ function VillainStats() {
             <IncreaseVillainStatButton stat={'attack'} />
           </div>
           <div className="mt-10">
-            <button
-              className="bg-gray-900 border-solid border-2 border-white text-white text-l font-bold px-4 rounded focus:outline-none hover:bg-gray-800"
-              onClick={() => resetVillainStats()}
-            >
-              Reset
-            </button>
+            <ResetButton reset={resetVillainStats} />
           </div>
         </div>
       )}

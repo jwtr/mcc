@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import cloneDeep from 'lodash/cloneDeep';
+
+import ResetButton from './ResetButton';
 import heroes from '../heroes.json';
 
 function HeroStats() {
@@ -108,12 +110,7 @@ function HeroStats() {
             <IncreaseHeroStatButton stat={'egoHand'} />
           </div>
           <div className="mt-10">
-            <button
-              className="bg-gray-900 border-solid border-2 border-white text-white text-l font-bold px-4 rounded focus:outline-none hover:bg-gray-800"
-              onClick={() => resetHeroStats()}
-            >
-              Reset
-            </button>
+            <ResetButton reset={resetHeroStats} />
           </div>
         </div>
       )}
