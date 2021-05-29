@@ -330,7 +330,7 @@
     "attack": 2
   },
   {
-    "name": "Collector (II)",
+    "name": "Collector (III)",
     "health": 18,
     "scheme": 4,
     "attack": 3
@@ -343,7 +343,7 @@
   },
   {
     "name": "Collector (A2)",
-    "health": 0,
+    "health": "INF",
     "scheme": 0,
     "attack": 0
   },
@@ -355,7 +355,7 @@
   },
   {
     "name": "Collector (B2)",
-    "health": 0,
+    "health": "INF",
     "scheme": 2,
     "attack": 2
   },

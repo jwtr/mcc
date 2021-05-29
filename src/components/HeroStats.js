@@ -73,38 +73,38 @@ function HeroStats() {
           <div className="p-3 my-3 text-3xl">{heroStats.name}</div>
           <div className="flex justify-between bg-gray-900 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseHeroStatButton stat={'health'} />
-            HP: {heroStats.health}
+            <p className="text-center w-full">HP: {heroStats.health}</p>
             <IncreaseHeroStatButton stat={'health'} />
           </div>
           <div className="flex justify-between bg-blue-600 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseHeroStatButton stat={'thwart'} />
-            THW: {heroStats.thwart}
+            <p className="text-center w-full">THW: {heroStats.thwart}</p>
             <IncreaseHeroStatButton stat={'thwart'} />
           </div>
           <div className="flex justify-between bg-red-600 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseHeroStatButton stat={'attack'} />
-            ATK: {heroStats.attack}
+            <p className="text-center w-full">ATK: {heroStats.attack}</p>
             <IncreaseHeroStatButton stat={'attack'} />
           </div>
           <div className="flex justify-between bg-green-600 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseHeroStatButton stat={'defence'} />
-            DEF: {heroStats.defence}
+            <p className="text-center w-full">DEF: {heroStats.defence}</p>
             <IncreaseHeroStatButton stat={'defence'} />
           </div>
           <div className="flex justify-between bg-gray-900 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseHeroStatButton stat={'hand'} />
-            Hand: {heroStats.hand}
+            <p className="text-center w-full">Hand: {heroStats.hand}</p>
             <IncreaseHeroStatButton stat={'hand'} />
           </div>
           <div className="p-3 my-3 text-3xl">{heroStats.ego}</div>
           <div className="flex justify-between bg-yellow-500 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseHeroStatButton stat={'recovery'} />
-            REC: {heroStats.recovery}
+            <p className="text-center w-full">REC: {heroStats.recovery}</p>
             <IncreaseHeroStatButton stat={'recovery'} />
           </div>
           <div className="flex justify-between bg-gray-900 p-2 my-3 border-solid border-4 border-white text-2xl">
             <DecreaseHeroStatButton stat={'egoHand'} />
-            Hand: {heroStats.egoHand}
+            <p className="text-center w-full">Hand: {heroStats.egoHand}</p>
             <IncreaseHeroStatButton stat={'egoHand'} />
           </div>
           <div className="mt-10">
