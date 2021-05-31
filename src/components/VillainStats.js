@@ -2,6 +2,7 @@ import { useState } from 'react';
 import cloneDeep from 'lodash/cloneDeep';
 
 import ResetButton from './ResetButton';
+import Stat from './Stat';
 import villains from '../villains.json';
 
 function VillainStats() {
@@ -41,28 +42,6 @@ function VillainStats() {
     setVillainStats(newStats);
   }
 
-  function IncreaseVillainStatButton(props) {
-    return (
-      <button
-        className="bg-white text-gray-900 text-l font-bold px-2 rounded focus:outline-none hover:opacity-50"
-        onClick={() => increaseVillainStat(props.stat)}
-      >
-        +
-      </button>
-    );
-  }
-
-  function DecreaseVillainStatButton(props) {
-    return (
-      <button
-        className="bg-white text-gray-900 text-l font-bold px-2 rounded focus:outline-none hover:opacity-50"
-        onClick={() => decreaseVillainStat(props.stat)}
-      >
-        -
-      </button>
-    );
-  }
-
   return (
     <div className="w-full lg:w-1/2 px-2 mt-10 lg:mt-0">
       <div className="max-w-md mx-auto">
@@ -83,17 +62,27 @@ function VillainStats() {
       </div>
       {selectedVillain && Object.keys(villainStats).length > 0 && (
         <div className="max-w-md mx-auto font-display">
-          <div className="p-3 my-3 text-3xl">{villainStats.name}</div>
-          <div className="flex justify-between bg-gray-900 p-2 my-3 border-solid border-4 border-white text-2xl">
-            {villainStats.health !== 'INF' && (
-              <DecreaseVillainStatButton stat={'health'} />
-            )}
-            <p className="text-center w-full">HP: {villainStats.health}</p>
-            {villainStats.health !== 'INF' && (
-              <IncreaseVillainStatButton stat={'health'} />
-            )}
-          </div>
-          {villainStats.health !== 'INF' && (
+          {Object.entries(villainStats).map((stat) => {
+            if (stat[0] === 'name') {
+              return (
+                <div key={villainStats.name} className="p-3 my-3 text-3xl">
+                  {villainStats.name}
+                </div>
+              );
+            } else {
+              return (
+                <Stat
+                  key={stat[0]}
+                  statValue={stat[1]}
+                  statName={stat[0]}
+                  increaseStat={increaseVillainStat}
+                  decreaseStat={decreaseVillainStat}
+                />
+              );
+            }
+          })}
+
+          {isFinite(String(villainStats.health)) && (
             <div className="flex justify-between p-2 my-3">
               Set starting health (optional)
               <button
@@ -122,16 +111,6 @@ function VillainStats() {
               </button>
             </div>
           )}
-          <div className="flex justify-between bg-blue-600 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseVillainStatButton stat={'scheme'} />
-            <p className="text-center w-full">SCH: {villainStats.scheme}</p>
-            <IncreaseVillainStatButton stat={'scheme'} />
-          </div>
-          <div className="flex justify-between bg-red-600 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseVillainStatButton stat={'attack'} />
-            <p className="text-center w-full">ATK: {villainStats.attack}</p>
-            <IncreaseVillainStatButton stat={'attack'} />
-          </div>
           <div className="mt-10">
             <ResetButton reset={resetVillainStats} />
           </div>

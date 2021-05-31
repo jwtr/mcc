@@ -2,6 +2,7 @@ import { useState } from 'react';
 import cloneDeep from 'lodash/cloneDeep';
 
 import ResetButton from './ResetButton';
+import Stat from './Stat';
 import heroes from '../heroes.json';
 
 function HeroStats() {
@@ -30,28 +31,6 @@ function HeroStats() {
     setHeroStats(heroes.find((hero) => hero.name === selectedHero));
   }
 
-  function IncreaseHeroStatButton(props) {
-    return (
-      <button
-        className="bg-white text-gray-900 text-l font-bold px-2 rounded focus:outline-none hover:opacity-50"
-        onClick={() => increaseHeroStat(props.stat)}
-      >
-        +
-      </button>
-    );
-  }
-
-  function DecreaseHeroStatButton(props) {
-    return (
-      <button
-        className="bg-white text-gray-900 text-l font-bold px-2 rounded focus:outline-none hover:opacity-50"
-        onClick={() => decreaseHeroStat(props.stat)}
-      >
-        -
-      </button>
-    );
-  }
-
   return (
     <div className="w-full lg:w-1/2 px-2">
       <div className="max-w-md mx-auto">
@@ -72,43 +51,31 @@ function HeroStats() {
       </div>
       {selectedHero && Object.keys(heroStats).length > 0 && (
         <div className="max-w-md mx-auto font-display">
-          <div className="p-3 my-3 text-3xl">{heroStats.name}</div>
-          <div className="flex justify-between bg-gray-900 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseHeroStatButton stat={'health'} />
-            <p className="text-center w-full">HP: {heroStats.health}</p>
-            <IncreaseHeroStatButton stat={'health'} />
-          </div>
-          <div className="flex justify-between bg-blue-600 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseHeroStatButton stat={'thwart'} />
-            <p className="text-center w-full">THW: {heroStats.thwart}</p>
-            <IncreaseHeroStatButton stat={'thwart'} />
-          </div>
-          <div className="flex justify-between bg-red-600 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseHeroStatButton stat={'attack'} />
-            <p className="text-center w-full">ATK: {heroStats.attack}</p>
-            <IncreaseHeroStatButton stat={'attack'} />
-          </div>
-          <div className="flex justify-between bg-green-600 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseHeroStatButton stat={'defence'} />
-            <p className="text-center w-full">DEF: {heroStats.defence}</p>
-            <IncreaseHeroStatButton stat={'defence'} />
-          </div>
-          <div className="flex justify-between bg-gray-900 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseHeroStatButton stat={'hand'} />
-            <p className="text-center w-full">Hand: {heroStats.hand}</p>
-            <IncreaseHeroStatButton stat={'hand'} />
-          </div>
-          <div className="p-3 my-3 text-3xl">{heroStats.ego}</div>
-          <div className="flex justify-between bg-yellow-500 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseHeroStatButton stat={'recovery'} />
-            <p className="text-center w-full">REC: {heroStats.recovery}</p>
-            <IncreaseHeroStatButton stat={'recovery'} />
-          </div>
-          <div className="flex justify-between bg-gray-900 p-2 my-3 border-solid border-4 border-white text-2xl">
-            <DecreaseHeroStatButton stat={'egoHand'} />
-            <p className="text-center w-full">Hand: {heroStats.egoHand}</p>
-            <IncreaseHeroStatButton stat={'egoHand'} />
-          </div>
+          {Object.entries(heroStats).map((stat) => {
+            if (stat[0] === 'name') {
+              return (
+                <div key={heroStats.name} className="p-3 my-3 text-3xl">
+                  {heroStats.name}
+                </div>
+              );
+            } else if (stat[0] === 'ego') {
+              return (
+                <div key={heroStats.ego} className="p-3 my-3 text-3xl">
+                  {heroStats.ego}
+                </div>
+              );
+            } else {
+              return (
+                <Stat
+                  key={stat[0]}
+                  statValue={stat[1]}
+                  statName={stat[0]}
+                  increaseStat={increaseHeroStat}
+                  decreaseStat={decreaseHeroStat}
+                />
+              );
+            }
+          })}
           <div className="mt-10">
             <ResetButton reset={resetHeroStats} />
           </div>
