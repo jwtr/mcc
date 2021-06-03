@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Stat from './Stat';
 
 const mockIncreaseStat = jest.fn();
@@ -50,4 +51,34 @@ test('renders non-numeric health stat', () => {
       name: '-',
     })
   ).not.toBeInTheDocument();
+});
+
+test('stat increase on button click', () => {
+  render(
+    <Stat
+      key={'health'}
+      statValue={10}
+      statName={'health'}
+      increaseStat={mockIncreaseStat}
+      decreaseStat={mockDecreaseStat}
+    />
+  );
+
+  userEvent.click(screen.getByRole('button', { name: '+' }));
+  expect(mockIncreaseStat.mock.calls.length).toBe(1);
+});
+
+test('stat decrease on button click', () => {
+  render(
+    <Stat
+      key={'health'}
+      statValue={10}
+      statName={'health'}
+      increaseStat={mockIncreaseStat}
+      decreaseStat={mockDecreaseStat}
+    />
+  );
+
+  userEvent.click(screen.getByRole('button', { name: '-' }));
+  expect(mockDecreaseStat.mock.calls.length).toBe(1);
 });

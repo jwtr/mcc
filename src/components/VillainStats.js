@@ -46,6 +46,7 @@ function VillainStats() {
     <div className="w-full lg:w-1/2 px-2 mt-10 lg:mt-0">
       <div className="max-w-md mx-auto">
         <select
+          data-testid={'villain-select'}
           value={selectedVillain}
           onChange={changeVillain}
           className="p-2 rounded bg-white text-black text-2xl w-full"

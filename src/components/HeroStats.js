@@ -35,6 +35,7 @@ function HeroStats() {
     <div className="w-full lg:w-1/2 px-2">
       <div className="max-w-md mx-auto">
         <select
+          data-testid={'hero-select'}
           value={selectedHero}
           onChange={changeHero}
           className="p-2 rounded bg-white text-black text-2xl w-full"
