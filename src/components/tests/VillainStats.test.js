@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import VillainStats from './VillainStats';
+import VillainStats from '../VillainStats';
 
 test('renders villain select', () => {
   render(<VillainStats />);

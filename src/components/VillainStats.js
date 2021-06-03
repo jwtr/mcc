@@ -3,7 +3,7 @@ import cloneDeep from 'lodash/cloneDeep';
 
 import ResetButton from './ResetButton';
 import Stat from './Stat';
-import villains from '../villains.json';
+import villains from '../data/villains.json';
 
 function VillainStats() {
   const [selectedVillain, setSelectedVillain] = useState('');
