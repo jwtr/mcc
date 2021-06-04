@@ -51,7 +51,8 @@ function Stat(props) {
     >
       {isFinite(String(props.statValue)) && <DecreaseStatButton />}
       <p className="text-center w-full">
-        {shortName}: {props.statValue}
+        {shortName}:{' '}
+        {props.statValue === 'INF' ? <>&infin;</> : props.statValue}
       </p>
       {isFinite(String(props.statValue)) && <IncreaseStatButton />}
     </div>

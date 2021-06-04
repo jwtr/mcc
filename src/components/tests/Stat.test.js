@@ -40,7 +40,7 @@ test('renders non-numeric health stat', () => {
     />
   );
 
-  expect(screen.getByText('HP: INF')).toBeInTheDocument();
+  expect(screen.getByText('HP: ∞')).toBeInTheDocument();
   expect(
     screen.queryByRole('button', {
       name: '+',
